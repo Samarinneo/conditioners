@@ -1,0 +1,166 @@
+body, html{
+	height: 100vh;
+}
+body{
+	font-family: verdana;
+	margin: 0;
+	display: grid;
+	grid-template-columns:  auto 27% 27% 27%;
+	grid-template-rows: 10% 30% auto 15%;
+	grid-template-areas: 
+	"sidebar header header header"
+	"sidebar sect1 sect2 sect3"
+	"sidebar main main main"
+	"sidebar footer footer footer"
+}
+aside{
+	grid-area: sidebar;
+	background-color: #007fff;
+/*	background:   url(1212.jpg) center top no-repeat;*/
+
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding-top: 20px;
+}
+.menu_item{
+	padding: 10px;
+	padding-top: 20px;
+}
+.menu_item a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+	font-size: 35px;
+	font-family: verdana;
+
+}
+header{
+	grid-area: header;
+	background-color: #91c;
+/*	background:  url(hovalot-dira-baer-sheva.jpg) center no-repeat;*/
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.header{
+	padding-left: 20px;
+ 
+}
+.header h1{
+text-align: center;
+ }
+section:nth-of-type(1){
+	grid-area: sect1;
+	background-color: #000;
+	background:   url(julia-zolotova-K2yKpyLMVOg-unsplash.jpg)center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+section:nth-of-type(2){
+	grid-area: sect2;
+	background-color: #005630;
+		background:  url(Happy-33rd-Birthday-Corey-Sevier-170703-03.jpg)center top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+ 
+section:nth-of-type(3){
+	grid-area: sect3;
+	background-color: #056c00;
+		background:  url(d8fd6698-eb29-4b75-94a9-89a128f6fc02.jpg)center top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+main{
+	grid-area: main;
+	background-color: #b7b7b7;
+    background:  url(https://scontent.fhfa3-1.fna.fbcdn.net/v/t1.0-9/86367380_2697441286999266_4613668699885273088_n.jpg?_nc_cat=105&_nc_ohc=iL9mPZc0USwAX9fXS8S&_nc_ht=scontent.fhfa3-1.fna&oh=b463d03c51c0943620012bf394fea0a6&oe=5EBD81F7)center top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.about{
+	padding: 20px;
+}
+footer{
+	grid-area: footer;
+	background-color: #ff0f;
+/*	 background:  url(boxer-burnfat.jpg)center top no-repeat;*/
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.tel{
+	padding-left: 20px;
+}
+.contact{
+padding-top: 00px;
+}
+.contact a{
+	text-decoration: none;
+	color: coral;
+	font-weight: 700;
+	font-size: 15px;
+	font-family: verdana;
+	padding-right: 20px;
+}
+@media only screen and (max-width: 768px)
+{
+	body{
+	margin: 0;
+	display: grid;
+	grid-template-columns:  100%;
+	grid-template-rows: 15% 10% 25% 25% 25% 70% 20%;
+	grid-template-areas: 
+	"sidebar"
+	"header"
+"sect1"
+"sect2"
+"sect3"
+"main"
+"footer"
+}
+
+.menu{
+	flex-direction: row;
+	padding: 20px;
+}
+.header h1{
+	font-size: 20px;
+ 
+}
+
+}
+
+@media only screen and (max-width: 568px)
+{
+	.menu{
+	flex-direction: row;
+	padding: 20px;
+	align-items: center;
+	}
+
+
+	.menu_item{
+	 
+	}
+
+
+	.menu_item a{
+		font-size: 16px;
+		padding: 0;
+	}
+
+.about{
+	padding-top: 30px;
+}
+.about p{
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 10px;
+	font-weight: 700;
+}
+
+}
